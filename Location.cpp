@@ -1,11 +1,16 @@
 
 #include <utility>
 #include <ostream>
+#include <stdexcept>
 #include "Location.hpp"
 
 namespace chesslib {
 
-Location::Location(unsigned char f, unsigned char r): file{f}, rank{r} {}
+Location::Location(unsigned char f, unsigned char r): file{f}, rank{r} {
+    if ((f < 'a' || f > 'h' || r < 1 || r > 8) && (f != 0 || r !=0)) {
+        throw std::invalid_argument("File must be a-h, and rank must be 1-8 (or 0,0 for captured)");
+    }
+}
 
 Location::Location(Location &&l): file{std::move(l.file)}, rank{std::move(l.rank)} {
     l.file = 0;

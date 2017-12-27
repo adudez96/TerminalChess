@@ -3,6 +3,8 @@
         "system_error": "cpp",
         "xtr1common": "cpp",
         "iostream": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "stdexcept": "cpp"
     }
 }

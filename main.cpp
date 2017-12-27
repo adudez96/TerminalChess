@@ -6,7 +6,7 @@
 using namespace chesslib;
 
 int main () {
-    Location l1{'A', 3};
+    Location l1{'a', 3};
 
     std::cout << l1 << std::endl;
     return 0;
