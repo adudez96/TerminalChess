@@ -29,7 +29,8 @@ bool Location::operator==(const Location &other) const {
 }
 
 std::ostream& operator<< (std::ostream &os, const Location &l) {
-    return os << l.file << static_cast<unsigned int>(l.rank);
+    os << l.file << static_cast<unsigned int>(l.rank);
+    return os;
 }
 
 } // namespace chesslib
