@@ -2,6 +2,7 @@
     "files.associations": {
         "system_error": "cpp",
         "xtr1common": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp"
     }
 }
