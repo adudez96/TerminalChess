@@ -12,9 +12,9 @@ Location::Location(Location &&l): file{std::move(l.file)}, rank{std::move(l.rank
     l.rank = 0;
 }
 
-Location::Location(const Location &l) = default;
+Location::Location(const Location &) = default;
 
-Location& Location::operator=(const Location &l) = default;
+Location& Location::operator=(const Location &) = default;
 
 Location& Location::operator=(Location &&l) {
     this->file = std::move(l.file);
